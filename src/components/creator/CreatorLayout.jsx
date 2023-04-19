@@ -1,15 +1,15 @@
 import { Outlet } from "react-router-dom";
 import Sidebar from "../sidebar/Sidebar";
-import Available from "./Available";
-const AppLayout = () => {
+import Details from "./details";
+const CreatorLayout = () => {
     return <div style={{
         padding: '50px 0px 0px 370px'
     }}>
         <Sidebar />
         <Outlet />
-        <Available />
+        <Details />
         
     </div>;
 };
 
-export default AppLayout;
+export default CreatorLayout;
